@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emily Elizabeth Kolar"/>
+    <meta name="keywords" content="deana buchanan portfolio programmer chicago">
+    <title>deana buchanan</title>
+    <link rel="stylesheet" href="./css/vendor/normalize.min.css" type="text/css"/>
+    <link rel="stylesheet" href="./lightbox/css/lightbox.css" type="text/css"/>
+    <link rel="stylesheet" href="./css/css.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet" type="text/css"/>
+	<script src="./js/vendor/jquery-2.min.js"  type="text/javascript"></script>
+</head>
+<body>
+	
+	<header class="header" id="home">
+			<img src="./images/tinified/deana2.png" class="headshot" alt="deana buchanan photo"/>
+			<div class="headerText">
+				<h1 class="h1">Deana Buchanan</h1>
+				<h3 class="tagline">Programmer</h3>
+			</div>
+
+	</header>
+	
+	
+	<main class="main">
+		
+		<div class="sidebar">
+			
+			<nav class="nav">
+				
+				<ul class="navList" id="navList">
+					<li class="navLink">
+						<a href="#work">
+							Work
+						</a>
+					</li>
+					<li class="navLink">
+						<a href="https://github.com/deanabuchanan/" target="_blank">
+							Github
+						</a>
+					</li>
+					<li class="navLink">
+						<a href="https://www.linkedin.com/in/deana-buchanan-38894b114" target="_blank">
+							LinkedIn
+						</a>
+					</li>
+					<li class="navLink">
+						<a href="#resume">
+							Resume
+						</a>
+					</li>
+				</ul>
+				
+			</nav>
+			
+		</div>
+		
+		
+		<div class="content">
+			
+			<div class="aboutContainer">
+				<div class="aboutDeana">
+					<strong>deana's the name and coding's the game.</strong><br/>
+					<sub class="subAbout">
+						but seriously, i love making games. i'm
+						strongest
+						<br/>in c++ and c#. however, i also have a couple of
+						<br/>javascript and webdev tricks up my sleeve.
+					</sub>
+				</div>
+			</div>
+			
+			
+			<ul class="workList" id="work">
+				
+				<!--====================================================
+				========================================================
+					.workItem is a project section
+				========================================================
+				=====================================================-->
+
+				<li class="workItem coaster" id="coaster">
+				
+					<a href="http://coaster.soill.org" target="_blank" class="titleLink">
+						<div class="titleBar">
+							<h4 class="h4">Coaster Challenge Mini Arcade</h4>
+						</div>
+					</a>
+					
+					<!--====================================================
+					========================================================
+						.desktopSpread shows up at 760px and larger
+					========================================================
+					=====================================================-->
+					<div class="desktopSpread" id="desktop-spread">
+						<a class="spreadLarge" href="./images/tinified/rampslevel.png" data-lightbox="coasterchallenge-dts">
+							<img src="./images/tinified/rampslevel.png" alt="Ramps Level"/>
+						</a>
+						<div class="spreadMinis">
+							<a class="spreadMini" href="./images/tinified/sitelanding.png" data-lightbox="coasterchallenge-dts">
+								<img src="./images/tinified/sitelanding.png" alt="Event website landing page"/>
+							</a>
+							<a class="spreadMini" href="./images/tinified/game.png" data-lightbox="coasterchallenge-dts">
+								<img src="./images/tinified/game.png" alt="Game main menu"/>
+							</a>
+						</div>
+					</div>
+					
+					<div class="infoBar coasterInfoBar" id="coasterText">
+							Worked with an interdisciplinary team to create an interactive eventhub and a 2D arcade-style game for <strong><a href="https://soill.org" class="clientLink">Special Olympics Illinois’</a></strong> annual Six Flags fundraiser. Team lead for game development. Heavy focus on physics-based game programming, as well as on interactive media design. 
+						<br/>
+							<span class="tech">
+								Construct II, Facebook API, HTML/CSS/JS/SVG
+							</span>
+						<button class="close" id="closeCoasterInfo">&times;</button>
+					</div>
+					
+					<!--====================================================
+					========================================================
+						.descriptionBar shows up at all sizes, but on large
+						screens onlly "LIVE"
+					========================================================
+					=====================================================-->
+					<div class="descriptionBar">
+						<!--====================================================
+							on mobile, .slideshow kicks off the lightboxes
+							the rest of the album images are hidden, in a div
+							at the bottom of the page
+						====================================================-->
+						<a class="itemOption slideshow" href="./images/tinified/rampslevel.png" data-lightbox="coasterchallenge"><span class="optionText">Photos</span>
+						</a>
+						<a class="itemOption liveSite" href="http://coaster.soill.org" target="_blank">
+							<span class="optionText">Live</span>
+						</a>
+						<div class="itemOption readInfo" id="coasterInfo">
+							<a href="#" class="optionText" id="coasterAbout">About</span>
+						</div>
+					</div>
+				
+				</li> <!-- end of project workitem -->
+				
+				<li class="workItem fairmade" id="fairmade">
+				
+					<a href="http://deana.ninja/fairmade" target="_blank" class="titleLink">
+						<div class="titleBar">
+							<h4 class="h4">FairMade Unity Webapp</h4>
+						</div>
+					</a>
+					
+					<div class="desktopSpread" id="desktop-spread">
+						<a class="spreadLarge" href="./images/tinified/fairmadeapp2.png" data-lightbox="fairmade-dts">
+							<img src="./images/tinified/fairmadeapp2.png" alt="Ramps Level"/>
+						</a>
+						<div class="spreadMinis">
+							<a class="spreadMini" href="./images/tinified/fairmadelanding.png" data-lightbox="fairmade-dts">
+								<img src="./images/tinified/fairmadelanding.png" alt="Event website landing page"/>
+							</a>
+							<a class="spreadMini" href="./images/tinified/fairmadeabout.png" data-lightbox="fairmade-dts">
+								<img src="./images/tinified/fairmadeabout.png" alt="Game main menu"/>
+							</a>
+						</div>
+					</div>
+
+					<div class="infoBar fairmadeInfoBar" id="fairmadeText">
+							A functional Unity prototype of an app allowing the user to find, mix, and match fair trade textiles from ethical distributors. Accompanying website. Created for a four-day team development challenge (ideation to launch).
+						<br/>
+							<span class="tech">
+								Unity + C#, HTML/CSS/JS, Adobe CS6
+							</span>
+						<button class="close" id="closeFairmadeInfo">&times;</button>
+					</div>
+					
+					<div class="descriptionBar">
+						<a class="itemOption slideshow" href="./images/tinified/fairmadeapp2.png" data-lightbox="fairmade"><span class="optionText">Photos</span>
+						</a>
+						<a class="itemOption liveSite" href="http://deana.ninja/fairmade" target="_blank">
+							<span class="optionText">Live</span>
+						</a>
+						<div class="itemOption readInfo" id="fairmadeInfo">
+							<a href="#" class="optionText" id="fairmadeAbout">About</span>
+						</div>
+					</div>
+					
+				</li>
+				
+				<li class="workItem dungeon" id="dungeon">
+				
+					<a href="#" target="_blank" class="titleLink">
+						<div class="titleBar">
+							<h4 class="h4">Dungeon Escape</h4>
+						</div>
+					</a>
+					
+					<!--====================================================
+					========================================================
+						DEANA TODO:
+						fill in <img> 'alt' attributes
+					========================================================
+					=====================================================-->
+					<div class="desktopSpread" id="desktop-spread">
+						<a class="spreadLarge" href="./images/tinified/de2.png" data-lightbox="dungeon-dts">
+							<img src="./images/tinified/de2.png" alt=""/>
+						</a>
+						<div class="spreadMinis">
+							<a class="spreadMini" href="./images/tinified/de1.png" data-lightbox="dungeon-dts">
+								<img src="./images/tinified/de1.png" alt=""/>
+							</a>
+							<a class="spreadMini" href="./images/tinified/de3.png" data-lightbox="dungeon-dts">
+								<img src="./images/tinified/de3.png" alt=""/>
+							</a>
+						</div>
+					</div>
+
+					<div class="infoBar dungeonInfoBar" id="dungeonText">
+							Third-person Unreal 3D Game created for a team final project in an advanced C++ course. Game allows the player to explore three levels and collect items.
+						<br/>
+						<span class="tech">
+							Unreal Engine 4, C++, Blueprints Visual Scripting
+						</span>
+						<button class="close" id="closeDungeonInfo">&times;</button>
+					</div>
+					
+					<div class="descriptionBar">
+						<a class="itemOption slideshow" href="./images/tinified/de1.png" data-lightbox="dungeon"><span class="optionText">Photos</span>
+						</a>
+						<a class="itemOption liveSite" href="" target="_blank">
+							<span class="optionText">Live</span>
+						</a>
+						<div class="itemOption readInfo" id="dungeonInfo">
+							<a href="#" class="optionText" id="dungeonAbout">About</span>
+						</div>
+					</div>
+					
+				</li>
+				
+				<li class="workItem relish" id="relish">
+				
+					<a href="" target="_blank" class="titleLink">
+						<div class="titleBar">
+							<h4 class="h4">Relish</h4>
+						</div>
+					</a>
+					
+					<!--====================================================
+					========================================================
+						DEANA TODO:
+						fill in <img> 'alt' attributes
+					========================================================
+					=====================================================-->
+					<div class="desktopSpread" id="desktop-spread">
+						<a class="spreadLarge" href="./images/tinified/relish1.png" data-lightbox="relish-dts">
+							<img src="./images/tinified/relish1.png" alt=""/>
+						</a>
+						<div class="spreadMinis">
+							<a class="spreadMini" href="./images/tinified/relish2.png" data-lightbox="relish-dts">
+								<img src="./images/tinified/relish2.png" alt=""/>
+							</a>
+							<a class="spreadMini" href="./images/tinified/relishcodesnippet.png" data-lightbox="relish-dts">
+								<img src="./images/tinified/relishcodesnippet.png" alt=""/>
+							</a>
+						</div>
+					</div>
+					
+					<div class="infoBar relishInfoBar" id="relishText">
+							A 2D mini game created in pure C# code. The player takes on the role of a pickle trying to avoid certain death. 						
+						<br/>
+						<span class="tech">
+							C#, Microsoft XNA, MonoGame, DirectX
+						</span>
+						<button class="close" id="closeRelishInfo">&times;</button>
+					</div>
+					
+					<div class="descriptionBar">
+						<a class="itemOption slideshow" href="./images/tinified/relish1.png" data-lightbox="relish"><span class="optionText">Photos</span>
+						</a>
+						<a class="itemOption liveSite" href="" target="_blank">
+							<span class="optionText">Live</span>
+						</a>
+						<div class="itemOption readInfo" id="relishInfo">
+							<a href="#" class="optionText" id="relishAbout">About</span>
+						</div>
+					</div>
+					
+				</li>
+
+			</ul>
+			
+			
+			<div class="resume" id="resume">
+				<a href="./DeanaBuchananRes.pdf" target="_blank">
+					<img src="./images/tinified/deanares.png" alt="deanas resume photo with link to full"/>
+				</a>
+				<div class="dlLinkSpacer">
+					<a class="dlResume" href="./DeanaBuchananRes.pdf" download="download">Save the PDF (just in case)</a>
+				</div>
+			</div>
+		
+		
+		</div>
+
+
+	</main>
+	
+	
+	<!--====================================================
+	========================================================
+		for mobile version lightboxes
+	========================================================
+	=====================================================-->
+	<div class="hiddenImages">
+		<a href="./images/tinified/sitelanding.png" data-lightbox="coasterchallenge"></a>
+		<a href="./images/tinified/game.png" data-lightbox="coasterchallenge"></a>
+		<a href="./images/tinified/fairmadelanding.png" data-lightbox="fairmade"></a>
+		<a href="./images/tinified/fairmadeabout.png" data-lightbox="fairmade"></a>
+		<a href="./images/tinified/de2.png" data-lightbox="dungeon"></a>
+		<a href="./images/tinified/de3.png" data-lightbox="dungeon"></a>
+		<a href="./images/tinified/relish2.png" data-lightbox="relish"></a>
+		<a href="./images/tinified/relishcodesnippet-mobile.png" data-lightbox="relish"></a>
+	</div>
+	
+	<footer class="footer">
+		<p class="copyright">&#169; Deana Buchanan, 2016</p>
+	</footer>
+	
+<script type="text/javascript">
+	window.addEventListener('load', function() {
+		if (window.innerWidth >= 680) {
+			var nav = document.querySelector('#navList');
+			var scrolled = false;
+			window.addEventListener('scroll', function(evt) {
+				if (!scrolled && document.body.scrollTop > 150) {
+					nav.classList.add('scrolled');
+					scrolled = true;
+				}
+				if (scrolled && document.body.scrollTop < 150) {
+					nav.classList.remove('scrolled');
+					scrolled = false;
+				}
+			});
+		}
+		else {
+			var control = true;
+			var coasterInfo = document.querySelector('#coasterInfo');
+			var closeCoaster = document.querySelector('#closeCoasterInfo');
+			var coasterPop = document.querySelector('#coasterText');
+			var fairmadeInfo = document.querySelector('#fairmadeInfo');
+			var closeFairmade = document.querySelector('#closeFairmadeInfo');
+			var fairmadePop = document.querySelector('#fairmadeText');
+			var home = document.querySelector('#home');
+			var dungeonInfo = document.querySelector('#dungeonInfo');
+			var closeDungeon = document.querySelector('#closeDungeonInfo');
+			var dungeonPop = document.querySelector('#dungeonText');
+			var relishInfo = document.querySelector('#relishAbout');
+			var closeRelishInfo = document.querySelector('#closeRelishInfo');	
+			var relishPop = document.querySelector('#relishText');
+			home.addEventListener('click', function(evt) {
+				window.location = './index.html';
+			});
+			coasterInfo.addEventListener('click', function(evt) {
+				evt.preventDefault();
+				if (!control) {
+					return null;
+				}
+				if (coasterPop.classList.contains('show')) {
+					coasterPop.classList.remove('show');
+					
+				}
+				else {
+					coasterPop.classList.add('show');
+				}
+				control = false;
+				setTimeout(function() {
+					control = true;
+				}, 500);
+				
+			});
+			closeCoaster.addEventListener('click', function(evt) {
+				evt.preventDefault();
+				if (!control) {
+					return null;
+				}				
+				coasterPop.classList.remove('show');
+				control = false;
+				setTimeout(function() {
+					control = true;
+				}, 500);
+			});
+			fairmadeInfo.addEventListener('click', function(evt) {
+				evt.preventDefault();
+				if (!control) {
+					return null;
+				}
+				if (fairmadePop.classList.contains('show')) {
+					fairmadePop.classList.remove('show');
+				}
+				else {
+					fairmadePop.classList.add('show');
+				}
+				control = false;
+				setTimeout(function() {
+					control = true;
+				}, 500);				
+			});
+			closeFairmade.addEventListener('click', function(evt) {
+				evt.preventDefault();
+				if (!control) {
+					return null;
+				}
+				fairmadePop.classList.remove('show');
+				control = false;
+				setTimeout(function() {
+					control = true;
+				}, 500);
+			});
+			dungeonInfo.addEventListener('click', function(evt) {
+				evt.preventDefault();
+				if (!control) {
+					return null;
+				}
+				if (dungeonPop.classList.contains('show')) {
+					dungeonPop.classList.remove('show');
+				}
+				else {
+					dungeonPop.classList.add('show');
+				}
+				control = false;
+				setTimeout(function() {
+					control = true;
+				}, 500);				
+			});
+			closeDungeon.addEventListener('click', function(evt) {
+				evt.preventDefault();
+				if (!control) {
+					return null;
+				}
+				dungeonPop.classList.remove('show');
+				control = false;
+				setTimeout(function() {
+					control = true;
+				}, 500);
+			});
+			relishInfo.addEventListener('click', function(evt) {
+				evt.preventDefault();
+				if (!control) {
+					return null;
+				}				
+				if (relishPop.classList.contains('show')) {
+					relishPop.classList.remove('show');
+				}
+				else {
+					relishPop.classList.add('show');
+				}			
+				control = false;
+				setTimeout(function() {
+					control = true;
+				}, 500);
+			});
+			closeRelishInfo.addEventListener('click', function(evt) {
+				evt.preventDefault();
+				if (!control) {
+					return null;
+				}
+				relishPop.classList.remove('show');
+				control = false;
+				setTimeout(function() {
+					control = true;
+				}, 500);
+			});
+		}
+	});	
+</script>
+<script src="./lightbox/js/lightbox.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	lightbox.option({
+		'resizeDuration': 300,
+		'wrapAround': true,
+		'alwaysShowNavOnTouchDevices': true,
+		'fadeDuration': 300
+    });
+</script>
+</body>
+</html>

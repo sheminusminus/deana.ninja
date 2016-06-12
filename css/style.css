@@ -1,0 +1,386 @@
+body {
+	overflow: hidden;
+	height: 100%;
+}
+
+.section {
+	text-align: center;
+}
+
+
+.bio h1 {
+	margin-top: 10px;
+}
+
+/*
+.bio {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+*/
+
+.portfolio {
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	background-color: #333;
+}
+
+.resume {
+	height: 100vh;
+	overflow: scroll;
+}
+
+.links {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	height: 50px;
+	margin: 10px auto 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.icon {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 0.3;
+	border-radius: 4px;
+	margin: 0 10px;
+}
+
+.icon:hover {
+	-webkit-animation: fadeIn 0.4s;
+	        animation: fadeIn 0.4s;
+	opacity: 0.8;
+	background-color: rgba(209,142,214,1);
+/* 	background-color: rgba(231,202,123,0.9); */
+}
+
+.github {
+	background-image: url('../images/github.png');
+}
+
+.linked {
+	background-image: url('../images/link.png');
+}
+
+.res {
+	background-image: url('../images/contact.png');
+}
+
+.port {
+	background-image: url('../images/port.png');
+}
+
+.line {
+	width: 100%;
+}
+
+.line .hr {
+	margin-top: -50px;
+}
+
+.name {
+	color: rgba(209,142,214,1);
+/* 	color: rgba(209,184,118,1) */
+}
+
+.first {
+	opacity: 0.75;
+	font-weight: 300;
+}
+
+.me {
+	height: 160px;
+	width: 160px;
+	border-radius: 50%;
+	box-shadow: 1px 1px 3px #222;
+}
+
+.bio {
+	font-weight: 300;
+	color: #C8C8C8;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.last {
+	font-weight: 400;
+	opacity: 0.9;
+}
+
+.about {
+	line-height: 24px;
+}
+
+.down {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 20px);
+	height: 30px;
+	width: 40px;
+	background-image: url('../images/darrow.png');
+	background-repeat: no-repeat;
+	background-size: 40px 30px;
+	background-position: center center;
+	opacity: 0.1;
+}
+
+#down-arrow2 {
+	z-index: 10;
+	opacity: 0.2;
+	background-image: url('../images/arrow_dark.png');
+}
+
+.down:hover {
+	cursor: pointer;
+}
+
+.slideTitle {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+	font-weight: 300;
+	font-size: 30px;
+	opacity: 0.3;
+	height: 40px;
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.projectImg {
+	background-color: #333;
+}
+
+.resumeSection {
+	color: #333;
+}
+
+/*
+.fairmade .cover {
+	width: 90vw;
+	height: 50vw;
+	margin-left: 5vw;
+	top: 20px;
+	background-image: url('../images/fairmade.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+}
+*/
+
+/*
+.coaster .cover {
+	width: 90vw;
+	height: 50vw;
+	margin-left: 5vw;
+	top: 20px;
+	background-image: url('../images/coaster.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+
+}
+*/
+
+.slide {
+	font-family: 'Open Sans', sans-serif;
+	color: #333;
+}
+
+.fp-prev {
+	-webkit-transform: scale(0.5) !important;
+	        transform: scale(0.5) !important;
+	border-color: transparent #666666 transparent transparent !important;
+	opacity: 0.5;
+}
+
+.fp-next {
+	-webkit-transform: scale(0.5) !important;
+	        transform: scale(0.5) !important;
+	border-color: transparent transparent transparent #666666 !important;	
+	opacity: 0.5;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	background-color: #144f54 !important;
+}
+
+@media (min-width: 760px) {
+	.fp-controlArrow {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+	.slideTitle {
+		font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+		font-weight: 300;
+		font-size: 60px;
+		opacity: 0.3;
+		height: 80px;
+		width: 100%;
+		text-align: center;
+		padding-top: 10px;
+		color: rgba(134, 45, 120, 0.7)
+	}
+	
+	.web, .unity {
+		width: 100%;
+		height: calc(100% - 70px);
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+	
+	.project {
+		height: 100%;
+		width: 50%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: end;
+		    -ms-flex-align: end;
+		        align-items: flex-end;
+	}
+	
+	.coaster {
+		padding-left: 40px;
+	}
+	
+	.fairmade {
+		padding-right: 40px;
+	}
+	
+	.projectImg {
+		max-width: 100%;
+		max-height: 100%;
+		border-radius: 3px;
+		box-shadow: 2px 2px 5px #666;
+	}
+	
+	.cover {
+		width: 80%;
+		margin: 0 10%;
+		-ms-flex-preferred-size: 50%;
+		    flex-basis: 50%;
+		max-height: 50%;	
+	}
+	.project .info {
+		padding: 0;
+		margin: -20px 10% 0;
+		-ms-flex-preferred-size: 50%;
+		    flex-basis: 50%;
+		width: 80%;
+	}
+
+}
+
+@media (min-width: 900px) {
+	.slideTitle {
+		font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+		font-weight: 300;
+		font-size: 60px;
+		opacity: 0.3;
+		height: 70px;
+		width: 100%;
+		text-align: center;
+		padding-top: 10px;
+	}
+	
+	.web, .unity {
+		width: 100%;
+		height: calc(100% - 70px);
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+	}
+	
+	.project {
+		height: 100%;
+		width: 50%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
+	}
+	
+	.project.coaster {
+		padding-left: 20px;
+	}
+	
+	.project.fairmade {
+		padding-right: 20px;
+	}
+	
+	.projectImg {
+		max-width: 100%;
+		max-height: 100%;
+		border-radius: 3px;
+	}
+	
+	.cover {
+		width: 80%;
+		max-height: 50%;
+		margin: 0 10%;
+	}
+	.project .info {
+		text-align: center;
+		width: 80%;
+		margin: 20px 10% 0;
+		padding: 0;
+	}
+}
+
+@-webkit-keyframes fadeIn {
+	0%
+	{ opacity: 0.3; background-color: transparent; }
+	50%
+	{ opacity: 0.55; background-color: transparent; }
+	100%
+	{ opacity: 0.8; background-color: rgba(209,142,214,1); /* background-color: rgba(231,202,123,0.9); */ }
+}
+
+@keyframes fadeIn {
+	0%
+	{ opacity: 0.3; background-color: transparent; }
+	50%
+	{ opacity: 0.55; background-color: transparent; }
+	100%
+	{ opacity: 0.8; background-color: rgba(209,142,214,1); /* background-color: rgba(231,202,123,0.9); */ }
+}

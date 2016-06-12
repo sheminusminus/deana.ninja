@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Emily Kolar"/>
+    <title>deana buchanan</title>
+    <link rel="stylesheet" href="css/vendor/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+   	<script src="js/vendor/jquery-2.min.js"></script>
+	<script src="bower/webcomponentsjs/webcomponents-lite.min.js"></script>
+	<link rel="import" href="u-photo.html">
+	<link rel="import" href="u-gallery.html">
+	<link rel="stylesheet" href="lightbox/css/lightbox.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header class="header">
+		<div class="leftPane"></div>
+		<div class="centerPane">
+			<img src="./images/deana3.png" alt="deana buchanan photo" class="deanaPhoto"/ id="deana"/>
+			<div class="deanaLinks">
+				<span class="icon github"></span>
+				<span class="icon linked"></span>
+				<span class="icon res"></span>
+				<span class="icon work"></span>
+			</div>
+			<div class="name">deana buchanan</div>
+			<div class="profession">programmer</div>
+		</div>
+		<div class="rightPane"></div>
+	</header>
+	<div class="portfolio">
+		<div class="viewer">
+			<section class="project" id="coaster-project">
+<!-- 				<div class="left"></div> -->
+				<u-gallery album="CoasterChallenge" cushion="5">
+					<u-photo image="./images/rampslevel.png" about="Runner-style Level" grid="1"></u-photo>
+					<u-photo image="./images/sitelanding.png" about="Website Landing" grid="2"></u-photo> 
+					<u-photo image="./images/game.png" about="Game Main Menu" grid="2"></u-photo> 
+					<p class="projectDescription">						
+						magna shabby chic officia, seitan pour-over sartorial in. laborum id sint, swag vhs tote bag aute occaecat lumbersexual hella. Est eiusmod godard direct trade, meh organic placeat photo booth pour-over delectus.
+					</p>
+				</u-gallery>
+<!--
+				<u-gallery album="FairMade" cushion="5" percent="90">
+				
+				</u-gallery>
+-->
+<!-- 				<div class="right"></div>	 -->
+				<div class="description">
+					<div class="projectInfo">
+						<span class="spacer"></span>
+						<h3 class="projectTitle">coaster challenge mini-arcade</h3>
+<!-- 						<a href="http://coasterchallenge.com" class="projectLink" target="_blank">coasterchallenge.com</a> -->
+					</div>
+				</div>			
+			</section>
+			<section class="project" id="fairmade-project">
+				<u-gallery album="FairMadeWebapp" cushion="5">
+					<u-photo image="./images/fairmadeapp.png" about="Runner-style Level" grid="1"></u-photo>
+					<u-photo image="./images/fairmadelanding.png" about="Website Landing" grid="2"></u-photo> 
+					<u-photo image="./images/fairmadeabout.png" about="Game Main Menu" grid="2"></u-photo> 
+					<p class="projectDescription">						
+						magna shabby chic officia, seitan pour-over sartorial in. laborum id sint, swag vhs tote bag aute occaecat lumbersexual hella. Est eiusmod godard direct trade, meh organic placeat photo booth pour-over delectus.
+					</p>
+				</u-gallery>		
+				<div class="description">
+					<div class="projectInfo">
+						<h3 class="projectTitle">fairmade unity app</h3>
+<!-- 						<a href="http://coasterchallenge.com" class="projectLink" target="_blank">coasterchallenge.com</a> -->
+					</div>
+				</div>					
+			</section>
+		</div>
+	</div>
+<script src="./lightbox/js/lightbox.min.js"></script>
+</body>
+</html>

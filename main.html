@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Emily Kolar"/>
+    <title>deana buchanan</title>
+    <link rel="stylesheet" href="css/vendor/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+   	<script src="js/vendor/jquery-2.min.js"></script>
+	<script src="bower/webcomponentsjs/webcomponents-lite.min.js"></script>
+	<link rel="import" href="u-photo.html">
+	<link rel="import" href="u-gallery.html">
+	<link rel="stylesheet" href="lightbox/css/lightbox.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header class="header" id="header">
+		<div class="leftPane"></div>
+		<div class="centerPane">
+			<img src="./images/deana2.png" alt="deana buchanan photo" class="deanaPhoto"/ id="deana"/>
+			<div class="deanaLinks">
+				<span class="icon github"></span>
+				<span class="icon linked"></span>
+				<span class="icon res"></span>
+				<span class="icon work"></span>
+			</div>
+			<div class="name">deana buchanan</div>
+			<div class="profession">programmer</div>
+		</div>
+		<div class="rightPane"></div>
+	</header>
+	<div class="tinyMenu" id="tinyMenu"></div>
+	<div class="portfolio">
+		<div class="viewer">
+			<section class="project" id="coaster-project">
+				<u-gallery album="CoasterChallenge" cushion="5">
+					<u-photo album="CoasterChallenge" image="./images/rampslevel.png" about="Runner-style Level" grid="1"></u-photo>
+					<u-photo album="CoasterChallenge" image="./images/sitelanding.png" about="Website Landing" grid="2"></u-photo> 
+					<u-photo album="CoasterChallenge" image="./images/game.png" about="Game Main Menu" grid="2"></u-photo> 
+					<p class="projectDescription">
+						here is a short description of what this project is and who it was made for, etc. also some things about your role in said project, and whatever else you want to include.	
+						<a href="http://coasterchallenge.com" target="_blank"><span class="linkIcon"></span></a>
+					</p>
+				</u-gallery>
+				<div class="description">
+					<div class="projectInfo">
+						<span class="spacer"></span>
+						<h3 class="projectTitle">coaster challenge mini arcade</h3>
+						<p class="projectDescriptionSide">	
+							here is a short description of what this project is and who it was made for, etc. also some things about your role in said project, and whatever else you want to include.	
+						<a href="http://coasterchallenge.com" target="_blank"><span class="linkIcon"></span></a>
+						</p>
+
+					</div>
+				</div>			
+			</section>
+			<section class="project" id="fairmade-project">
+				<u-gallery album="FairMadeWebapp" cushion="5">
+					<u-photo album="FairMadeWebapp" image="./images/fairmadeapp2.png" about="Runner-style Level" grid="1"></u-photo>
+					<u-photo album="FairMadeWebapp" image="./images/fairmadelanding.png" about="Website Landing" grid="2"></u-photo> 
+					<u-photo album="FairMadeWebapp" image="./images/fairmadeabout.png" about="Game Main Menu" grid="2"></u-photo> 
+					<p class="projectDescription">						
+						magna shabby chic officia, seitan pour-over sartorial in. laborum id sint, swag vhs tote bag aute occaecat lumbersexual hella. Est eiusmod godard direct trade, meh organic placeat photo booth pour-over delectus.
+						<a href="https://emkolar.ninja/fairmade/" target="_blank"><span class="linkIcon"></span></a>
+					</p>
+				</u-gallery>		
+				<div class="description">
+					<div class="projectInfo">
+						<h3 class="projectTitle">fairmade unity app</h3>
+						<p class="projectDescriptionSide">	
+						magna shabby chic officia, seitan pour-over sartorial in. laborum id sint, swag vhs tote bag aute occaecat lumbersexual hella. Est eiusmod godard direct trade, meh organic placeat photo booth pour-over delectus.
+						<a href="https://emkolar.ninja/fairmade/" target="_blank"><span class="linkIcon"></span></a>
+						</p>
+
+					</div>
+				</div>					
+			</section>
+		</div>
+	</div>
+<script src="./lightbox/js/lightbox.min.js"></script>
+<script>
+	var tinyMenu = document.querySelector('#tinyMenu');
+	var scrolled = false;
+	window.addEventListener('scroll', function() {
+		if (document.body.scrollTop > 245 && !scrolled)	{
+			tinyMenu.classList.add('appear');
+			scrolled = true;
+		}	
+		if (document.body.scrollTop < 245 && scrolled) {
+			tinyMenu.classList.remove('appear');
+			scrolled = false;
+		}	
+	});
+</script>
+</body>
+</html>
